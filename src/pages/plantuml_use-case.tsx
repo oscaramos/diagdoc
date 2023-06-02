@@ -13,7 +13,7 @@ export default function Page() {
             "Documentation for creating a use-case diagram in plantuml",
           images: [
             {
-              url: `${BASE_URL}/images/plantuml-use-case.png`,
+              url: `${BASE_URL}/images/plantuml_use-case.png`,
               width: 820,
               height: 836,
               alt: "Plantuml use-case diagram example",
@@ -21,7 +21,7 @@ export default function Page() {
           ],
         }}
       />
-      Exist plantuml!
+      Exist plantuml use case
     </>
   );
 }
