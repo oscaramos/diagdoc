@@ -1,24 +1,27 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Plantuml use-case documentation",
-  description: "Documentation for creating a use-case diagram in plantuml",
-  openGraph: {
-    title: "Plantuml use-case documentation",
-    description: "Documentation for creating a use-case diagram in plantuml",
-    type: "website",
-    url: "/plantuml_use-case",
-    images: [
-      {
-        url: "/images/plantuml-use-case.png",
-        width: 820,
-        height: 836,
-        alt: "Plantuml use-case diagram example",
-      },
-    ],
-  },
-};
+import { NextSeo } from "next-seo";
+import { BASE_URL } from "@/utils/constants";
 
 export default function Page() {
-  return <div>Exist plantuml</div>;
+  return (
+    <>
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: `${BASE_URL}/plantuml_use-case`,
+          title: "Plantuml use-case documentation",
+          description:
+            "Documentation for creating a use-case diagram in plantuml",
+          images: [
+            {
+              url: `${BASE_URL}/images/plantuml-use-case.png`,
+              width: 820,
+              height: 836,
+              alt: "Plantuml use-case diagram example",
+            },
+          ],
+        }}
+      />
+      Exist plantuml!
+    </>
+  );
 }
