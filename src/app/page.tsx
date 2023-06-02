@@ -1,4 +1,23 @@
 import Image from 'next/image'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'this title',
+  description: 'describe this',
+  openGraph: {
+    title: "open graph title",
+    description: "open graph description",
+    type: "website",
+    images: [
+      {
+        url: '/example.png',
+        width: 816,
+        height: 651,
+        alt: 'Og Image Alt Example',
+      }
+    ]
+  }
+};
 
 export default function Home() {
   return (
