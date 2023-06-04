@@ -1,7 +1,10 @@
+import { useEffect } from "react";
 import { NextSeo } from "next-seo";
-import { BASE_URL } from "@/utils/constants";
 import { OpenGraph } from "next-seo/lib/types";
+import { useRouter } from "next/router";
 import { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from "next";
+
+import { BASE_URL } from "@/utils/constants";
 
 type PageName = "nomnoml_class" | "plantuml_use-case";
 
@@ -54,12 +57,24 @@ const SEO_DATA: Record<PageName, OpenGraph> = {
   },
 };
 
+const REDIRECT_URLS: Record<PageName, string> = {
+  nomnoml_class: "https://www.nomnoml.com",
+  "plantuml_use-case": "https://plantuml.com/use-case-diagram",
+};
+
 export default function Page({
   pageName,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const router = useRouter();
+  const urlToRedirect = REDIRECT_URLS[pageName];
+
+  useEffect(() => {
+    void router.push(urlToRedirect);
+  }, [router, urlToRedirect]);
+
   return (
     <>
-      Page name: {pageName}
+      Redirecting to: {urlToRedirect}
       <NextSeo openGraph={SEO_DATA[pageName]} />
     </>
   );
