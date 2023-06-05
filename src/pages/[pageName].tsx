@@ -1,12 +1,16 @@
 import { useEffect } from "react";
 import { NextSeo } from "next-seo";
-import { OpenGraph } from "next-seo/lib/types";
 import { useRouter } from "next/router";
 import { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from "next";
 
-import { BASE_URL } from "@/utils/constants";
+import { supportedDiagrams } from "@/utils/supportedDiagrams";
+import { BASE_URL, DiagramTypeSyntax } from "@/utils/constants";
 
-type PageName = "nomnoml_class" | "plantuml_use-case";
+const pageNames = supportedDiagrams.flatMap(({ diagramLanguage, types }) =>
+  types.map(({ diagramType }) => `${diagramLanguage}_${diagramType}`)
+) as DiagramTypeSyntax[];
+
+type PageName = (typeof pageNames)[number];
 
 type Props = {
   pageName: PageName;
@@ -14,10 +18,9 @@ type Props = {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [
-      { params: { pageName: "nomnoml_class" } },
-      { params: { pageName: "plantuml_use-case" } },
-    ],
+    paths: pageNames.map((pageName) => ({
+      params: { pageName },
+    })),
     fallback: false,
   };
 };
@@ -26,41 +29,44 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   return { props: { pageName: params?.pageName as PageName } };
 };
 
-const OPENGRAPH_DATA: Record<PageName, OpenGraph> = {
-  nomnoml_class: {
-    type: "website",
-    url: `${BASE_URL}/nomnoml_class`,
-    title: "Class Diagram | Nomnoml",
-    description: "Documentation for creating a class diagram in nomnoml",
-    images: [
-      {
-        url: `${BASE_URL}/images/nomnoml_class.png`,
-        width: 820,
-        height: 651,
-        alt: "Nomnoml class diagram example",
-      },
-    ],
-  },
-  "plantuml_use-case": {
-    type: "website",
-    url: `${BASE_URL}/plantuml_use-case`,
-    title: "Use Case Diagram | Plantuml",
-    description: "Documentation for creating a use-case diagram in plantuml",
-    images: [
-      {
-        url: `${BASE_URL}/images/plantuml_use-case.jpg`,
-        width: 820,
-        height: 836,
-        alt: "Plantuml use-case diagram example",
-      },
-    ],
-  },
-};
+const OPENGRAPH_DATA = Object.assign(
+  {},
+  ...supportedDiagrams.flatMap((item) =>
+    item.types.map((type) => {
+      const pageName: PageName = `${item.diagramLanguage}_${type.diagramType}`;
+      return {
+        [pageName]: {
+          type: "website",
+          url: `${BASE_URL}/${pageName}`,
+          title: `${
+            type.diagramType.charAt(0).toUpperCase() + type.diagramType.slice(1)
+          } Diagram | ${
+            item.diagramLanguage.charAt(0).toUpperCase() +
+            item.diagramLanguage.slice(1)
+          }`,
+          description: `Documentation for creating a ${type.diagramType} diagram in ${item.diagramLanguage}`,
+          images: [
+            {
+              url: `${BASE_URL}/images/${pageName}.png`,
+              width: 1200,
+              height: 600,
+              alt: `${item.diagramLanguage} ${type.diagramType} diagram example`,
+            },
+          ],
+        },
+      };
+    })
+  )
+);
 
-const REDIRECT_URLS: Record<PageName, string> = {
-  nomnoml_class: "https://www.nomnoml.com",
-  "plantuml_use-case": "https://plantuml.com/use-case-diagram",
-};
+const REDIRECT_URLS = Object.assign(
+  {},
+  ...supportedDiagrams.flatMap((item) =>
+    item.types.map((type) => ({
+      [`${item.diagramLanguage}_${type.diagramType}`]: type.documentationURL,
+    }))
+  )
+);
 
 export default function Page({
   pageName,

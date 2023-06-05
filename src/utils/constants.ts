@@ -1,1 +1,70 @@
 export const BASE_URL = "https://diagdoc.vercel.app";
+
+export const diagramLanguages = [
+  "blockdiag",
+  "bpmn",
+  "bytefield",
+  "seqdiag",
+  "actdiag",
+  "nwdiag",
+  "packetdiag",
+  "rackdiag",
+  "c4-with-plantuml",
+  "d2",
+  "dbml",
+  "ditaa",
+  "erd",
+  "excalidraw",
+  "graphviz",
+  "mermaid",
+  "nomnoml",
+  "pikchr",
+  "plantuml",
+  "structurizr",
+  "svgbob",
+  "umlet",
+  "vega",
+  "vegalite",
+  "wavedrom",
+  "wireviz",
+] as const;
+
+export type DiagramLanguage = (typeof diagramLanguages)[number];
+
+export const diagramTypes = [
+  "sequence",
+  "use-case",
+  "class",
+  "object",
+  "activity",
+  "component",
+  "deployment",
+  "state",
+  "timing",
+  "graph",
+  "entity-relationship",
+  "user-journey",
+  "gantt",
+  "pie-chart",
+  "requirement",
+  "gitgraph",
+  "mindmap",
+  "timeline",
+  "block",
+  "network",
+  "json",
+  "yaml",
+  "salt-wireframe",
+  "rack",
+  "grid",
+  "dbml",
+  "ascii",
+  "digital-timing",
+  "line-chart",
+  "bar-chart",
+  "histogram",
+] as const;
+
+export type DiagramType = (typeof diagramTypes)[number];
+
+export type DiagramTypeSyntax = `${DiagramLanguage}_${DiagramType}`;
