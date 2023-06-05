@@ -8,60 +8,61 @@ export const supportedDiagrams: {
     documentationURL: string;
   }[];
 }[] = [
-  // {
-  //   diagramLanguage: "mermaid",
-  //   languageDocumentationURL: "https://mermaid.js.org/",
-  //   types: [
-  //     {
-  //       diagramType: "graph",
-  //       documentationURL: "https://mermaid.js.org/syntax/flowchart.html"
-  //     },
-  //     {
-  //       diagramType: "sequence",
-  //       documentationURL: "https://mermaid.js.org/syntax/sequenceDiagram"
-  //     },
-  //     {
-  //       diagramType: "class",
-  //       documentationURL: "https://mermaid.js.org/syntax/classDiagram"
-  //     },
-  //     {
-  //       diagramType: "state",
-  //       documentationURL: "https://mermaid.js.org/syntax/stateDiagram"
-  //     },
-  //     {
-  //       diagramType: "entity-relationship",
-  //       documentationURL: "https://mermaid.js.org/syntax/entityRelationshipDiagram"
-  //     },
-  //     {
-  //       diagramType: "user-journey",
-  //       documentationURL: "https://mermaid.js.org/syntax/userJourney"
-  //     },
-  //     {
-  //       diagramType: "gantt",
-  //       documentationURL: "https://mermaid.js.org/syntax/gantt"
-  //     },
-  //     {
-  //       diagramType: "pie-chart",
-  //       documentationURL: "https://mermaid.js.org/syntax/pie"
-  //     },
-  //     {
-  //       diagramType: "requirement",
-  //       documentationURL: "https://mermaid.js.org/syntax/requirementDiagram"
-  //     },
-  //     {
-  //       diagramType: "gitgraph",
-  //       documentationURL: "https://mermaid.js.org/syntax/gitgraph"
-  //     },
-  //     {
-  //       diagramType: "mindmap",
-  //       documentationURL: "https://mermaid.js.org/syntax/mindmap"
-  //     },
-  //     {
-  //       diagramType: "timeline",
-  //       documentationURL: "https://mermaid.js.org/syntax/timeline"
-  //     },
-  //   ]
-  // },
+  {
+    diagramLanguage: "mermaid",
+    languageDocumentationURL: "https://mermaid.js.org/",
+    types: [
+      {
+        diagramType: "graph",
+        documentationURL: "https://mermaid.js.org/syntax/flowchart.html",
+      },
+      {
+        diagramType: "sequence",
+        documentationURL: "https://mermaid.js.org/syntax/sequenceDiagram",
+      },
+      {
+        diagramType: "class",
+        documentationURL: "https://mermaid.js.org/syntax/classDiagram",
+      },
+      {
+        diagramType: "state",
+        documentationURL: "https://mermaid.js.org/syntax/stateDiagram",
+      },
+      {
+        diagramType: "entity-relationship",
+        documentationURL:
+          "https://mermaid.js.org/syntax/entityRelationshipDiagram",
+      },
+      {
+        diagramType: "user-journey",
+        documentationURL: "https://mermaid.js.org/syntax/userJourney",
+      },
+      {
+        diagramType: "gantt",
+        documentationURL: "https://mermaid.js.org/syntax/gantt",
+      },
+      {
+        diagramType: "pie-chart",
+        documentationURL: "https://mermaid.js.org/syntax/pie",
+      },
+      {
+        diagramType: "requirement",
+        documentationURL: "https://mermaid.js.org/syntax/requirementDiagram",
+      },
+      {
+        diagramType: "gitgraph",
+        documentationURL: "https://mermaid.js.org/syntax/gitgraph",
+      },
+      {
+        diagramType: "mindmap",
+        documentationURL: "https://mermaid.js.org/syntax/mindmap",
+      },
+      {
+        diagramType: "timeline",
+        documentationURL: "https://mermaid.js.org/syntax/timeline",
+      },
+    ],
+  },
   {
     diagramLanguage: "plantuml",
     languageDocumentationURL: "https://plantuml.com/",
