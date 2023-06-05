@@ -48,7 +48,7 @@ const OPENGRAPH_DATA: Record<PageName, OpenGraph> = {
     description: "Documentation for creating a use-case diagram in plantuml",
     images: [
       {
-        url: `${BASE_URL}/images/plantuml_use-case.png`,
+        url: `${BASE_URL}/images/plantuml_use-case.jpg`,
         width: 820,
         height: 836,
         alt: "Plantuml use-case diagram example",
