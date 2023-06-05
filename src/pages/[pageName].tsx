@@ -47,7 +47,7 @@ const OPENGRAPH_DATA = Object.assign(
           description: `Documentation for creating a ${type.diagramType} diagram in ${item.diagramLanguage}`,
           images: [
             {
-              url: `${BASE_URL}/images/${pageName}.png`,
+              url: `${BASE_URL}/images/${pageName}.jpg`,
               width: 1200,
               height: 600,
               alt: `${item.diagramLanguage} ${type.diagramType} diagram example`,
