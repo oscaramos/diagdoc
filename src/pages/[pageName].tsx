@@ -26,11 +26,11 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   return { props: { pageName: params?.pageName as PageName } };
 };
 
-const SEO_DATA: Record<PageName, OpenGraph> = {
+const OPENGRAPH_DATA: Record<PageName, OpenGraph> = {
   nomnoml_class: {
     type: "website",
     url: `${BASE_URL}/nomnoml_class`,
-    title: "Use Case Diagram | Nomnoml",
+    title: "Class Diagram | Nomnoml",
     description: "Documentation for creating a class diagram in nomnoml",
     images: [
       {
@@ -75,7 +75,7 @@ export default function Page({
   return (
     <>
       Redirecting to: {urlToRedirect}
-      <NextSeo openGraph={SEO_DATA[pageName]} />
+      <NextSeo openGraph={OPENGRAPH_DATA[pageName]} />
     </>
   );
 }
