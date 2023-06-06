@@ -159,156 +159,161 @@ export const supportedDiagrams: {
       },
     ],
   },
-  // {
-  //   diagramLanguage: "nomnoml",
-  //   languageDocumentationURL: "https://www.nomnoml.com",
-  //   types: [
-  //     {
-  //       diagramType: "class",
-  //       documentationURL: "https://www.nomnoml.com"
-  //     },
-  //     {
-  //       diagramType: "activity",
-  //       documentationURL: "https://www.nomnoml.com"
-  //     },
-  //     {
-  //       diagramType: "graph",
-  //       documentationURL: "https://www.nomnoml.com"
-  //     },
-  //     {
-  //       diagramType: "entity-relationship",
-  //       documentationURL: "https://www.nomnoml.com"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "graphviz",
-  //   languageDocumentationURL: "https://graphviz.org/Gallery/",
-  //   types: [
-  //     {
-  //       diagramType: "graph",
-  //       documentationURL: "https://graphviz.org/Gallery/directed/unix"
-  //     },
-  //     {
-  //       diagramType: "entity-relationship",
-  //       documentationURL: "https://graphviz.org/Gallery/neato/ER"
-  //     },
-  //     {
-  //       diagramType: "mindmap",
-  //       documentationURL: "https://graphviz.org/Gallery/twopi/happiness"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "actdiag",
-  //   languageDocumentationURL: "http://blockdiag.com/en/actdiag",
-  //   types: [
-  //     {
-  //       diagramType: "activity",
-  //       documentationURL: "http://blockdiag.com/en/actdiag/examples.html"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "blockdiag",
-  //   languageDocumentationURL: "http://blockdiag.com/en/blockdiag",
-  //   types: [
-  //     {
-  //       diagramType: "block",
-  //       documentationURL: "http://blockdiag.com/en/blockdiag/examples.html"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "nwdiag",
-  //   languageDocumentationURL: "http://blockdiag.com/en/nwdiag",
-  //   types: [
-  //     {
-  //       diagramType: "network",
-  //       documentationURL: "http://blockdiag.com/en/nwdiag/nwdiag-examples.html"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "rackdiag",
-  //   languageDocumentationURL: "http://blockdiag.com/en/nwdiag/rackdiag-examples.html",
-  //   types: [
-  //     {
-  //       diagramType: "rack",
-  //       documentationURL: "http://blockdiag.com/en/nwdiag/rackdiag-examples.html"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "dbml",
-  //   languageDocumentationURL: "https://dbml.dbdiagram.io/home/",
-  //   types: [
-  //     {
-  //       diagramType: "dbml",
-  //       documentationURL: "https://dbml.dbdiagram.io/home/"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "erd",
-  //   languageDocumentationURL: "https://github.com/BurntSushi/erd",
-  //   types: [
-  //     {
-  //       diagramType: "entity-relationship",
-  //       documentationURL: "https://github.com/BurntSushi/erd"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "ditaa",
-  //   languageDocumentationURL: "https://ditaa.sourceforge.net/",
-  //   types: [
-  //     {
-  //       diagramType: "ascii",
-  //       documentationURL: "https://ditaa.sourceforge.net/"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "svgbob",
-  //   languageDocumentationURL: "https://ivanceras.github.io/svgbob-editor/",
-  //   types: [
-  //     {
-  //       diagramType: "ascii",
-  //       documentationURL: "https://ivanceras.github.io/svgbob-editor/"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "wavedrom",
-  //   languageDocumentationURL: "https://wavedrom.com/tutorial.html",
-  //   types: [
-  //     {
-  //       diagramType: "digital-timing",
-  //       documentationURL: "https://wavedrom.com/tutorial.html"
-  //     },
-  //   ]
-  // },
-  // {
-  //   diagramLanguage: "vegalite",
-  //   languageDocumentationURL: "https://vega.github.io/vega-lite/examples/",
-  //   types: [
-  //     {
-  //       diagramType: "bar-chart",
-  //       documentationURL: "https://vega.github.io/vega-lite/examples/bar.html"
-  //     },
-  //     {
-  //       diagramType: "histogram",
-  //       documentationURL: "https://vega.github.io/vega-lite/examples/bar_binned_data.html"
-  //     },
-  //     {
-  //       diagramType: "line-chart",
-  //       documentationURL: "https://vega.github.io/vega-lite/examples/line_dashed_part.html"
-  //     },
-  //     {
-  //       diagramType: "pie-chart",
-  //       documentationURL: "https://vega.github.io/vega-lite/examples/arc_pie.html"
-  //     },
-  //   ]
-  // },
+  {
+    diagramLanguage: "nomnoml",
+    languageDocumentationURL: "https://www.nomnoml.com",
+    types: [
+      {
+        diagramType: "class",
+        documentationURL: "https://www.nomnoml.com",
+      },
+      {
+        diagramType: "activity",
+        documentationURL: "https://www.nomnoml.com",
+      },
+      {
+        diagramType: "graph",
+        documentationURL: "https://www.nomnoml.com",
+      },
+      {
+        diagramType: "entity-relationship",
+        documentationURL: "https://www.nomnoml.com",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "graphviz",
+    languageDocumentationURL: "https://graphviz.org/gallery/",
+    types: [
+      {
+        diagramType: "graph",
+        documentationURL: "https://graphviz.org/Gallery/directed/unix",
+      },
+      {
+        diagramType: "entity-relationship",
+        documentationURL: "https://graphviz.org/Gallery/neato/ER",
+      },
+      {
+        diagramType: "mindmap",
+        documentationURL: "https://graphviz.org/Gallery/twopi/happiness",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "actdiag",
+    languageDocumentationURL: "http://blockdiag.com/en/actdiag",
+    types: [
+      {
+        diagramType: "activity",
+        documentationURL: "http://blockdiag.com/en/actdiag/examples.html",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "blockdiag",
+    languageDocumentationURL: "http://blockdiag.com/en/blockdiag",
+    types: [
+      {
+        diagramType: "block",
+        documentationURL: "http://blockdiag.com/en/blockdiag/examples.html",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "nwdiag",
+    languageDocumentationURL: "http://blockdiag.com/en/nwdiag",
+    types: [
+      {
+        diagramType: "network",
+        documentationURL: "http://blockdiag.com/en/nwdiag/nwdiag-examples.html",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "rackdiag",
+    languageDocumentationURL:
+      "http://blockdiag.com/en/nwdiag/rackdiag-examples.html",
+    types: [
+      {
+        diagramType: "rack",
+        documentationURL:
+          "http://blockdiag.com/en/nwdiag/rackdiag-examples.html",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "dbml",
+    languageDocumentationURL: "https://dbml.dbdiagram.io/home/",
+    types: [
+      {
+        diagramType: "dbml",
+        documentationURL: "https://dbml.dbdiagram.io/home/",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "erd",
+    languageDocumentationURL: "https://github.com/BurntSushi/erd",
+    types: [
+      {
+        diagramType: "entity-relationship",
+        documentationURL: "https://github.com/BurntSushi/erd",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "ditaa",
+    languageDocumentationURL: "https://ditaa.sourceforge.net/",
+    types: [
+      {
+        diagramType: "ascii",
+        documentationURL: "https://ditaa.sourceforge.net/",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "svgbob",
+    languageDocumentationURL: "https://ivanceras.github.io/svgbob-editor/",
+    types: [
+      {
+        diagramType: "ascii",
+        documentationURL: "https://ivanceras.github.io/svgbob-editor/",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "wavedrom",
+    languageDocumentationURL: "https://wavedrom.com/tutorial.html",
+    types: [
+      {
+        diagramType: "digital-timing",
+        documentationURL: "https://wavedrom.com/tutorial.html",
+      },
+    ],
+  },
+  {
+    diagramLanguage: "vegalite",
+    languageDocumentationURL: "https://vega.github.io/vega-lite/examples/",
+    types: [
+      {
+        diagramType: "bar-chart",
+        documentationURL: "https://vega.github.io/vega-lite/examples/bar.html",
+      },
+      {
+        diagramType: "histogram",
+        documentationURL:
+          "https://vega.github.io/vega-lite/examples/bar_binned_data.html",
+      },
+      {
+        diagramType: "line-chart",
+        documentationURL:
+          "https://vega.github.io/vega-lite/examples/line_dashed_part.html",
+      },
+      {
+        diagramType: "pie-chart",
+        documentationURL:
+          "https://vega.github.io/vega-lite/examples/arc_pie.html",
+      },
+    ],
+  },
 ];
