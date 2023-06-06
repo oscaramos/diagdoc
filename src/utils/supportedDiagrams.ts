@@ -133,32 +133,32 @@ export const supportedDiagrams: {
       },
     ],
   },
-  // {
-  //   diagramLanguage: "d2",
-  //   languageDocumentationURL: "https://d2lang.com",
-  //   types: [
-  //     {
-  //       diagramType: "sequence",
-  //       documentationURL: "https://d2lang.com/tour/sequence-diagrams"
-  //     },
-  //     {
-  //       diagramType: "class",
-  //       documentationURL: "https://d2lang.com/tour/uml-classes"
-  //     },
-  //     {
-  //       diagramType: "graph",
-  //       documentationURL: "https://d2lang.com/tour/intro"
-  //     },
-  //     {
-  //       diagramType: "entity-relationship",
-  //       documentationURL: "https://d2lang.com/tour/sql-tables"
-  //     },
-  //     {
-  //       diagramType: "grid",
-  //       documentationURL: "https://d2lang.com/tour/grid-diagrams"
-  //     },
-  //   ]
-  // },
+  {
+    diagramLanguage: "d2",
+    languageDocumentationURL: "https://d2lang.com",
+    types: [
+      {
+        diagramType: "sequence",
+        documentationURL: "https://d2lang.com/tour/sequence-diagrams",
+      },
+      {
+        diagramType: "class",
+        documentationURL: "https://d2lang.com/tour/uml-classes",
+      },
+      {
+        diagramType: "graph",
+        documentationURL: "https://d2lang.com/tour/intro",
+      },
+      {
+        diagramType: "entity-relationship",
+        documentationURL: "https://d2lang.com/tour/sql-tables",
+      },
+      {
+        diagramType: "grid",
+        documentationURL: "https://d2lang.com/tour/grid-diagrams",
+      },
+    ],
+  },
   // {
   //   diagramLanguage: "nomnoml",
   //   languageDocumentationURL: "https://www.nomnoml.com",
