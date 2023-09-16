@@ -316,4 +316,14 @@ export const supportedDiagrams: {
       },
     ],
   },
+  {
+    diagramLanguage: "markmap",
+    languageDocumentationURL: "https://markmap.js.org/docs/markmap/",
+    types: [
+      {
+        diagramType: "mindmap",
+        documentationURL: "https://markmap.js.org/docs/markmap",
+      },
+    ],
+  },
 ];

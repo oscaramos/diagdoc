@@ -27,6 +27,7 @@ export const diagramLanguages = [
   "vegalite",
   "wavedrom",
   "wireviz",
+  "markmap",
 ] as const;
 
 export type DiagramLanguage = (typeof diagramLanguages)[number];
